@@ -1,1 +1,12 @@
+---
+pagination:
+  data: collections.stories
+  size: 1
+  alias: story
+permalink: "{{ story.fileSlug }}/index.html"
+---
 
+<article>
+  <h1>{{ story.data.title }}</h1>
+  <div>{{ story.templateContent | safe }}</div>
+</article>
