@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "static/uploads"
-public_folder: "/uploads"
+public_folder: "/static/uploads"
 
 collections:
   - name: "stories"
@@ -13,5 +13,4 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
