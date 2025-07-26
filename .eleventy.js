@@ -1,13 +1,13 @@
-
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("static");
-
-  return {
-    dir: {
-      input: "src",
-      output: "_site",
-      includes: "_includes",
-      data: "_data",
-    },
-  };
-};
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stories That Save</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body style="text-align: center; font-family: sans-serif; padding: 2rem;">
+  <img src="/static/uploads/logo.png" alt="Stories That Save" style="max-width: 300px;" />
+  <h1>Documenting Resilience, Inspiring Global Change</h1>
+  <p>Welcome to the platform amplifying Indigenous and local community voices.</p>
+  <p><a href="/admin">Log in to CMS</a></p>
+</body>
+</html>
