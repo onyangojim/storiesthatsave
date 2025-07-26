@@ -11,3 +11,6 @@ module.exports = function (eleventyConfig) {
     },
   };
 };
+eleventyConfig.addCollection("stories", function (collection) {
+  return collection.getFilteredByGlob("content/stories/*.md");
+});
