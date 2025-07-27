@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <title>Stories That Save CMS</title>
+
+    <!-- Manually control CMS initialization -->
     <script>
       window.CMS_MANUAL_INIT = true;
     </script>
+
+    <!-- Netlify CMS script -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+    <!-- Initialize CMS with external config -->
     <script>
       CMS.init({ config: '/admin/config.yml' });
     </script>
   </head>
-  <body></body>
+  <body>
+    <!-- Optional: Add loading message -->
+    <p>Loading CMS…</p>
+  </body>
 </html>
