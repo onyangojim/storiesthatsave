@@ -1,1 +1,22 @@
 
+backend:
+  name: git-gateway       # Use Netlify Identity to authenticate
+  branch: main            # Branch where content edits are saved
+
+media_folder: "static/uploads"    # Where uploaded images are stored (in the repo)
+public_folder: "/static/uploads"  # Public URL path for those images
+
+collections:
+  - name: "stories"               # Folder-based collection
+    label: "Stories"              # CMS label in the sidebar
+    folder: "content/stories"     # Location of your Markdown files
+    create: true                  # Allow users to create new files
+    slug: "{{slug}}"              # URL-friendly file names
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
